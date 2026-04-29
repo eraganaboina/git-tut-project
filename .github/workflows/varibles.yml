@@ -1,0 +1,17 @@
+name: demo-2
+on :
+  push:
+env:
+  cloud: aws
+jobs:
+  jobs1:
+    runs-on: ubuntu-latest
+    env:
+      services: s3
+    steps:
+      - name: step1
+        env:
+          level: 3.5 out of 5
+        run: echo "i know $cloud in that i know servuices like $services $level" 
+    
+  
