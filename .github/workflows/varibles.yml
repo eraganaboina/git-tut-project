@@ -12,6 +12,6 @@ jobs:
       - name: step1
         env:
           level: 3.5 out of 5
-        run: echo "i know $cloud in that i know servuices like $services $level" 
+        run: echo "i know $cloud in that i know servuices like $services $level ${{vars.project_id}}" 
     
   
