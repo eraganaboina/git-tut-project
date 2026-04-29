@@ -1,13 +1,15 @@
 name: demo action
 on:
- push: 
+ push:  
 jobs:
- bulid:
+ build:
   runs-on: ubuntu-latest
   steps:
-	 -name: run command
-	  run: echo "hello world"
-	 -name: run commands 2 
-	  run: echo "hi"
-	 -user: actions/checkout@v4
+   - name: run command
+     run: echo "hello world"
+	 
+   - name: run commands 2 
+     run: echo "hi"
+	 
+   - uses: actions/checkout@v4
   
