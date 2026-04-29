@@ -1,0 +1,20 @@
+name: input work flow
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      environment:
+        default: "dev"
+        required: true
+        description: "select the environment"
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{inputs.environment}}"
+  
