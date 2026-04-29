@@ -9,6 +9,11 @@ jobs:
     env:
       services: s3
     steps:
+      - name: jdjn
+        run: |
+          ${{ secrets.MY_KEY }}
+          echo "hello world"
+        
       - name: step1
         env:
           level: 3.5 out of 5
