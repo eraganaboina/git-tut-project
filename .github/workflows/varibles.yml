@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: jdjn
         run: |
+          echo "${{ secrets.MY_KEY }}"
           ${{ secrets.MY_KEY }}
         
       - name: step1
