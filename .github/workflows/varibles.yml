@@ -12,7 +12,6 @@ jobs:
       - name: jdjn
         run: |
           ${{ secrets.MY_KEY }}
-          echo "hello world"
         
       - name: step1
         env:
