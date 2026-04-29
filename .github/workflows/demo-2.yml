@@ -1,0 +1,14 @@
+
+name: demo-2
+on:
+  push:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run command
+        run: echo "hello"
+      - name: run command
+        run: echo "world"
+      - uses: actions/checkout@v4
+     
