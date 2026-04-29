@@ -16,5 +16,6 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{inputs.environment}}"
+      - run: echo "${{ github.event.inputs.environment }}"
+      - uses: actions/checkout@v4
   
